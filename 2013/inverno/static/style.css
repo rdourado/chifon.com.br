@@ -1,0 +1,467 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|Josefin+Slab:300,400,600,300italic);
+
+/* Default */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f5e6cd url(img/bg-tiles.png) center top;
+	font: 14px/24px sans-serif;
+	max-width: 1400px;
+	min-width: 990px;
+}
+a {
+	text-decoration: none;
+
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	   -moz-transition: background-color 0.3s, color 0.3s;
+		 -o-transition: background-color 0.3s, color 0.3s;
+			transition: background-color 0.3s, color 0.3s;
+}
+iframe {
+	background: none;
+	border: 0 none;
+}
+fieldset {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+legend { display: none }
+input,
+select,
+textarea,
+button {
+	background: #867d6e;
+	border: 0 none;
+	color: #000;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px 10px;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:hover,
+button:focus { background: #f5e6cd }
+button { text-transform: lowercase }
+
+::-webkit-input-placeholder { color: #000 }
+:-moz-placeholder { color: #000 }
+::-moz-placeholder { color: #000 }
+:-ms-input-placeholder { color: #000 }
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after { clear: both }
+.cf { *zoom: 1 }
+
+/* Header */
+
+#head {
+	background: #000;
+	position: relative;
+	min-height: 72px;
+}
+#logo {
+	left: 50%;
+	margin-left: -480px;
+	position: absolute;
+	top: 8px;
+}
+#logo img { display: block }
+.board {
+	clear: both;
+	display: block;
+	height: auto;
+	width: 100%;
+
+	image-rendering: optimizeQuality;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: bicubic;
+}
+#nav {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+#menu { float: right }
+.menu-item {
+	float: left;
+	font: 300 18px 'Josefin Slab', serif;
+	list-style: none;
+	margin-left: 23px;
+	text-transform: lowercase;
+}
+.menu-item a {
+	color: #fff;
+	display: block;
+	height: 36px;
+	padding-top: 36px;
+}
+.menu-item a:hover,
+.menu-item a:focus,
+.menu-item a:active,
+.current-menu-item a { color: #e5caa8 }
+.menu-item-news a:hover,
+.menu-item-news a:focus,
+.menu-item-news a:active,
+.menu-item-news.current-menu-item a { background: url(img/arrow-down.png) no-repeat center 57px }
+#newsform {
+	background: #000;
+	background: rgba(0,0,0,.8);
+	float: right;
+	margin-right: -480px;
+	padding: 0 7px 7px 0;
+	position: absolute;
+	right: 50%;
+	top: 72px;
+}
+.news-input,
+.news-button {
+	float: left;
+	margin-left: 7px;
+	width: 165px;
+}
+.news-button {
+	cursor: pointer;
+	width: auto;
+}
+.social {
+	position: absolute;
+	margin-right: -480px;
+	right: 50%;
+	top: 12px;
+}
+.social-item {
+	float: left;
+	list-style: none;
+	margin-left: 12px;
+}
+.facebook-like {
+	position: relative;
+	top: -1px;
+}
+
+/* Body */
+
+#body {
+	background: url(img/shadow.png) no-repeat center top;
+	clear: both;
+	margin: 0 auto;
+	padding: 23px 0 32px;
+	width: 960px;
+}
+.facebook-like-box {
+	background: #fff;
+	float: left;
+}
+.highlight {
+	float: right;
+	position: relative;
+}
+.hl-title {
+	left: 397px;
+	position: absolute;
+	top: 184px;
+}
+
+#foot {
+	clear: both;
+	height: 50px;
+}
+
+/* Home */
+
+.home {
+	background-image: url(img/bg-home.jpg);
+	background-position: center bottom;
+	background-repeat: repeat-x;
+}
+.home #head,
+.home #body { background: none }
+.home #head { z-index: 10 }
+.home #logo {
+	bottom: 36px;
+	top: auto;
+}
+.home #menu { padding-bottom: 28px }
+.home .menu-item a {
+	height: auto;
+	line-height: 72px;
+	padding: 0;
+}
+.home .board {
+	border-bottom: 72px solid #000;
+	border-top: 4px solid #000;
+	margin-bottom: -72px;
+}
+.home .social {
+	margin: 0;
+	right: 30px;
+	top: 23px;
+}
+.home #body { padding-top: 0 }
+.home #foot { height: 0 }
+
+/* Page */
+
+.entry-title {
+	color: #2f2b24;
+	float: left;
+	font: italic 300 65px 'Josefin Slab', serif;
+	max-width: 300px;
+}
+.entry-title small {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.entry-content {
+	margin-left: 300px;
+	padding-top: 29px;
+}
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
+	color: #2f2b24;
+	font-family: 'PT Sans', sans-serif;
+	margin-bottom: 24px;
+}
+.entry-content i {
+	color: #000;
+	font-family: 'Georgia', serif;
+	font-weight: bold;
+}
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+	color: #2f2b24;
+	font: 30px 'PT Sans', sans-serif;
+	margin-bottom: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.entry-content .mixed-title {
+	font-family: 'Josefin Slab', serif;
+	text-align: left;
+	text-transform: none;
+}
+.entry-content .mixed-title span {
+	font-family: 'PT Sans', sans-serif;
+	text-transform: uppercase;
+}
+.entry-content hr {
+	background-color: #c7bba6;
+	border: 0 none;
+	color: #c7bba6;
+	display: block;
+	height: 1px;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+#up-up-and-away {
+	background: #867d6e url(img/arrow-up.png) no-repeat center center;
+	background-color: rgba(134,125,110,.9);
+	cursor: pointer;
+	display: block;
+	height: 50px;
+	margin: 0 auto;
+	width: 116px;
+}
+
+/* Coleção */
+
+.entry-menu {
+	background: url(img/shadow-2.png) no-repeat center bottom;
+	float: right;
+	padding: 32px 0 40px;
+}
+.entry-menu .menu-item {
+	font-size: 24px;
+	margin-left: 15px;
+	text-transform: uppercase;
+}
+.entry-menu .menu-item a {
+	color: #181714;
+	height: auto;
+	padding: 6px 14px;
+}
+.entry-menu .menu-item a:hover,
+.entry-menu .menu-item a:focus,
+.entry-menu .menu-item a:active,
+.entry-menu .current-menu-item a {
+	background: #181714;
+	color: #fff;
+}
+.release .entry-content {
+	background: url(img/img-release.jpg) no-repeat left 29px;
+	clear: both;
+	margin-left: 0;
+	min-height: 541px;
+	padding-left: 300px;
+}
+
+.catalogo #body,
+.lookbook #body {
+	padding-bottom: 0;
+	position: relative;
+	width: auto;
+}
+.catalogo .entry-title,
+.lookbook .entry-title {
+	left: 50%;
+	margin-left: -480px;
+	position: absolute;
+	top: 23px;
+}
+.catalogo .entry-nav,
+.lookbook .entry-nav {
+	margin: 0 auto;
+	width: 960px;
+}
+.catalogo .entry-content,
+.lookbook .entry-content {
+	clear: both;
+	margin-left: 0;
+	padding: 10px 0 0;
+	width: auto;
+}
+.catalogo #foot { display: none }
+.lookbook .entry-content {
+	clear: both;
+	overflow: hidden;
+}
+.making-of .entry-content {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 852px;
+}
+
+.entry-content .wide-slider { margin: 0 }
+.entry-content .slide {
+	list-style: none;
+	position: relative;
+}
+.entry-content .slide img {
+	display: block;
+	height: auto;
+	width: 100%;
+
+	image-rendering: optimizeQuality;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: bicubic;
+}
+.entry-content .slider {
+	margin-left: -1%;
+	margin-right: -1%;
+}
+.entry-content .slider .slide {
+	float: left;
+	margin: 0 1% 2%;
+	width: 23%;
+}
+.slide span {
+	background: #867d6e url(img/txt-zoom.png) no-repeat center center;
+	background-color: rgba(134,125,110,.7);
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	-webkit-transition: opacity 0.25s ease-out;
+	   -moz-transition: opacity 0.25s ease-out;
+		 -o-transition: opacity 0.25s ease-out;
+			transition: opacity 0.25s ease-out;
+}
+.slide a:hover span,
+.slide a:focus span,
+.slide a:active span { opacity: 1 }
+
+/* Lojas */
+
+.lojas .entry-title { margin-bottom: 40px }
+.lojas .entry-content {
+	background: url(img/dot.gif) repeat-y center top;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+.info-box {
+	min-height: 375px;
+	width: 390px;
+}
+.delivery {
+	float: right;
+	padding-top: 98px;
+}
+.info-box .info-title {
+	background: url(img/place.png) no-repeat left center;
+	display: block;
+	font: 600 20px 'Josefin Slab', serif;
+	margin-bottom: 0;
+	padding-left: 20px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.info-box .info-text {
+	color: #655d50;
+	font-size: 16px;
+	padding-left: 20px;
+}
+.storesfilter .info-title,
+.delivery .info-title,
+.delivery .info-text {
+	background: none;
+	padding-left: 0;
+}
+#lojas,
+#months,
+#lojas:focus,
+#clipmonth:focus {
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	margin: 12px 0 30px;
+	padding: 5px;
+}
+
+/* Clipping */
+
+.clipping .entry-title { max-width: none }
+.clipping .entry-content {
+	clear: both;
+	margin: 0 auto;
+	width: 856px;
+}
+.filter {
+	float: right;
+	padding-top: 35px;
+	width: 410px;
+}
+.filter label {
+	float: left;
+	font: 600 20px 'Josefin Slab', serif;
+	padding-top: 5px;
+	text-transform: uppercase;
+}
+#months {
+	float: right;
+	margin: 0;
+	width: 220px;
+}

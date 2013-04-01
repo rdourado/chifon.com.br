@@ -1,0 +1,8 @@
+.slide span {
+	display: none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+}
+.slide a:hover span,
+.slide a:focus span,
+.slide a:active span { display: block }

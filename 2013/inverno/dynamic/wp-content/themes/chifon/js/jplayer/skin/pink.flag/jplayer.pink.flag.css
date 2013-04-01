@@ -1,0 +1,91 @@
+.jp-audio {
+	font-size: 11px;
+	left: 0;
+	position: absolute;
+	top: 27px;
+	width: 230px;
+	z-index: 99;
+}
+.jp-interface {
+	padding-top: 42px;
+	position: relative;
+}
+.jp-audio .jp-controls { margin-left: 35px }
+.jp-interface .jp-controls li { float: left }
+.jp-interface .jp-controls a {
+	display:block;
+	height: 34px;
+	margin: 0 1px 2px 0;
+	overflow: hidden;
+	padding: 0;
+	text-indent: -9999px;
+}
+.jp-type-playlist .jp-controls a {
+	background-image: url(../../../../img/radio-myth.png);
+	height: 15px;
+	width: 19px;
+}
+.jp-type-playlist .jp-play { background-position: -76px -22px }
+.jp-type-playlist .jp-play:hover { background-position: -95px -22px }
+.jp-type-playlist .jp-pause { background-position: -114px -22px }
+.jp-type-playlist .jp-pause:hover { background-position: -133px -22px }
+.jp-type-playlist .jp-stop { background-position: 0 -22px }
+.jp-type-playlist .jp-stop:hover { background-position: -19px -22px }
+.jp-type-playlist .jp-previous { background-position: -38px -22px }
+.jp-type-playlist .jp-previous:hover { background-position: -57px -22px }
+.jp-type-playlist .jp-next { background-position: -152px -22px }
+.jp-type-playlist .jp-next:hover { background-position: -171px -22px }
+
+.jp-toggles,
+.jp-progress,
+.jp-seek-bar,
+.jp-play-bar,
+.jp-audio .jp-controls .jp-volume-max,
+.jp-current-time,
+.jp-duration,
+.jp-free-media { display: none !important }
+
+.jp-interface .jp-controls .jp-mute,
+.jp-interface .jp-controls .jp-unmute {
+	background: url(../../../../img/radio-myth.png) -190px -22px;
+	height: 15px;
+	margin-left: 7px;
+	width: 19px;
+}
+.jp-interface .jp-controls .jp-mute:hover,
+.jp-interface .jp-controls .jp-unmute:hover { background: url(../../../../img/radio-myth.png) -207px -22px }
+.jp-volume-bar {
+	background: #3a041c;
+	border: 1px solid #ec008c;
+	cursor: pointer;
+	height: 3px;
+	margin-top: 4px;
+	overflow: hidden;
+	padding: 1px;
+	width: 42px;
+}
+.jp-volume-bar-value {
+	background: #ec008c;
+	height: 3px;
+}
+.jp-playlist {
+	background: url(../../../../img/radio-myth.png);
+	height: 17px;
+	left: 50%;
+	margin-left: -57px;
+	position: absolute;
+	top: 0;
+	width: 115px;
+}
+.jp-type-playlist .jp-playlist li { display: none }
+.jp-type-playlist .jp-playlist .jp-playlist-current {
+	color: #fff;
+	display: block;
+	left: 50%;
+	margin-left: -115px;
+	position: absolute;
+	text-align: center;
+	top: 10px;
+	width: 230px;
+}
+.jp-type-playlist .jp-playlist .jp-playlist-current a { color: #fff }

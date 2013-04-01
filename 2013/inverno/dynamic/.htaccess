@@ -1,0 +1,2 @@
+RewriteCond %{HTTP:Host} ^www.chifon.com.br [NC]
+RewriteRule (.*) http://chifon.com.br/$1 [R=301,L] 
